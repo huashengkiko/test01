@@ -3,4 +3,5 @@ FROM fabric8/java-jboss-openjdk8-jdk
 
 USER root
 
-COPY fee-c-provider/target/demo.jar /home/
+# Prepare by downloading dependencies
+COPY deepexi-center-provider/target/demo.jar /home/
